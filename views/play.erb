@@ -1,5 +1,9 @@
 <p><%= @game.player_1.name %> vs. <%= @game.player_2.name %></p>
+<div><%= @game.player_1.name %>: <%= @game.player_1.hit_points %>HP</div>
 <div><%= @game.player_2.name %>: <%= @game.player_2.hit_points %>HP</div>
 
+<%= @game.current_turn.name %>'s turn
  
-<a href="/attack">Attack</a>
+<a href="/attack">
+  <button type="button" >Attack</button>
+</a>
